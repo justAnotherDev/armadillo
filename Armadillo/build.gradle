@@ -17,7 +17,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -99,7 +99,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/scribd/armadillo")
+            url = uri("https://maven.pkg.github.com/$githubRepository")
             credentials {
                 username = "$githubUsername"
                 password = "$githubPassword"

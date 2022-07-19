@@ -3,13 +3,14 @@
 buildscript {
     ext.githubUsername = "$System.env.GITHUB_USERNAME"
     ext.githubPassword = "$System.env.GITHUB_PASSWORD"
+    ext.githubRepository = "$System.env.GITHUB_REPOSITORY"
 
     ext.kotlin_version = '1.4.30'
 
     apply from: "$project.rootDir/gradle/shared.gradle"
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.android.tools.build:gradle:6.8.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
